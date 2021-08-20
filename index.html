@@ -6,20 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index-page</title>
     <style>
-        
+        nav{
+            height: 60px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            margin: auto;
+            width: 60%;
+            padding: 0;
+            
+            
+          }
+          
+          /* Style the links inside the navigation bar */
+          .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            border-bottom: 3px solid transparent;
+          }
+          
+          .navbar a:hover {
+            color: rgb(255, 166, 0);
+            border-bottom: 3px solid rgb(255, 166, 0);
+          }
+          
+          .navbar a.active {
+            color: rgb(255, 166, 0);
+            border-bottom: 3px solid rgb(255, 166, 0);
+          }
+          .navbar-centered a {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+          }
+          .navbar-right {
+            float: right;
+          }
+          
     </style>
 </head>
 <body>
-    <nav>
+    <nav class="nav">
     <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="">About us</a>
-        <a href="">Committee Members</a>
-        <a href="">Events</a>
-        <a href="">Projects</a>
-        <a href="">Gallery</a>
-      </div>
-    </nav>
     
+    <a href="#home" class="active">Home</a>
+    <a href="#news">About us</a>
+    <a href="#contact">Committee Members</a>
+    <a href="#home" >Events</a>
+    <a href="#home" >Projects</a>
+    <a href="#home" >Gallery</a>
+</div>
+     
+    </nav>
+   
+    
+
 </body>
 </html>
