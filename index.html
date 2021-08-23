@@ -56,7 +56,7 @@
 
 /* Slideshow container */
 .slidescontainer {
-  max-width: 1500px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
   
@@ -64,6 +64,11 @@
 
 .mySlides {
     display: none;
+    
+  }
+  .image{
+    height: 600px;
+    max-width: 8000px;
   }
   .prev, .next {
     cursor: pointer;
@@ -142,6 +147,21 @@
     from {opacity: .4}
     to {opacity: 1}
   }
+  .image-text{
+    position: absolute;
+    bottom: 60px;
+    left: 16px;
+    color: #f2f2f2;
+  }
+  .readmore {
+    background-color: rgb(255, 136, 0);
+    color: white;
+    height: 35px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: medium;
+
+  }
           
     </style>
 </head>
@@ -149,7 +169,7 @@
     <nav class="nav">
     <div class="navbar">
 
-    <a href="#home">Home</a>
+    <a href="index.html">Home</a>
     <a href="#news">About us</a>
     <a href="#contact">Committee Members</a>
     <a href="#home" >Events</a>
@@ -159,35 +179,48 @@
     </nav>
     <div class="slidescontainer">
         <div class="mySlides fade">
-          
-          <img src="./images/pic1.jpg" style="width:100%">
+          <div class="image-text">
+            <h1>Urgen Chholing Pang 
+              <br>Monastery</h1>
+            <h3>It is located at Dongme, Sunapati-3,
+              <br>Ramechhap
+            </h3> 
+            <button class="readmore">
+              More About Us
+            </button>
+          </div>
+          <img src="./images/pic1.jpg" class="image" style="width:100%">
+         
          
         </div>
       
         <div class="mySlides fade">
           
-          <img src="./images/pic2.jpg" style="width:100%">
+          <img src="./images/pic2.jpg" class="image" style="width:100%">
           
         </div>
       
         <div class="mySlides fade">
           
-          <img src="./images/pic3.jpg" style="width:100%">
+          <img src="./images/pic4.jpg" class="image" style="width:100%">
           
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        
       </div>
       <br>
       
       <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+     
  <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -217,6 +250,7 @@
       slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
+    
  </script>  
     
 
