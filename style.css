@@ -156,3 +156,20 @@ border-radius: 8px;
 font-size: medium;
 
 }
+.column {
+  float: left;
+  padding: 5px;
+  margin-left: 45px;
+  height: 30px;
+  width: 29%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.committee{
+margin-left: 600px;
+}
