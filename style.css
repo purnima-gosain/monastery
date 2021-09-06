@@ -159,9 +159,31 @@ font-size: medium;
 .column {
   float: left;
   padding: 5px;
-  margin-left: 45px;
-  height: 30px;
-  width: 29%;
+  margin-left: 146px;
+  height: 200px;
+  width: 300px;
+}
+.row img{
+  border-radius: 10px;
+}
+.cmn{
+  float: left;
+  margin-left: 36px;
+}
+.cln{
+  margin-left: 40px;
+}
+.cmnk {
+  margin-left: 50px;
+}
+.cmnn{
+  margin-left: 40px;
+}
+.cpn{
+  margin-left: 60px;
+}
+.mn{
+  margin-left: 60px;
 }
 
 /* Clear floats after image containers */
@@ -173,3 +195,16 @@ font-size: medium;
 .committee{
 margin-left: 600px;
 }
+.allMembers {
+  position: absolute;
+  background-color: rgba(151, 32, 32, 0.856);
+  color: white;
+  height: 35px;
+  width: 150px;
+  border-radius: 8px;
+  font-size: medium;
+  margin-left: 660px;
+  margin-bottom: 95px;
+  top: 180%;
+  
+  }
